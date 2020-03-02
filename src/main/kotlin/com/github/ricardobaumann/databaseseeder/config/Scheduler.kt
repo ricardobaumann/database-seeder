@@ -13,7 +13,7 @@ import java.util.*
 class Scheduler(private val jobLauncher: JobLauncher,
                 private val importPeopleJob: Job) {
 
-    @Scheduled(fixedRate = 5000L)
+    @Scheduled(fixedRate = 1000L)
     fun schedule() {
         jobLauncher.run(
                 importPeopleJob,
